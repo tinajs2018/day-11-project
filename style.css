@@ -1,0 +1,176 @@
+body{
+  font-family: serif;
+  color: darkgray;
+  display: block;
+  margin: 0;
+    
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+}
+header.logo{
+   line-height: 50px; 
+   float: left;
+  
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+   
+    line-height: 50px;
+    padding:  0 20px;
+    color: darkgray;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover{
+   color: black;
+    background-color: green;
+}
+header nav ul li button{
+  background-color: mediumseagreen;
+    border-radius: 40px;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header nav ul li a.active{
+
+text-decoration: green underline;
+}
+.menu-toggle{
+    color :gray  ;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+
+}
+@media(max-width:991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+display: none;
+position: absolute;
+width: 100%;
+height: 100vh;
+background-color: white;
+top: 50px;
+left: -100%;
+
+transition: 0.5s;
+    }
+
+    header nav .active{
+     left: 0px;   
+    }
+    header  nav ul{
+        display: block;
+        text-align: center;
+    }
+}
+/********section2***********/
+.section2{
+    margin: 0;
+  
+    
+}
+.noted{
+    padding: 0 100px; 
+}
+
+.row{
+    display: flex;
+    font-family: sans-serif;
+    margin-top: 80px;
+
+ 
+}
+.col-6{
+    width: 50%;
+}
+.section2 button{
+background-color: mediumseagreen;
+border-radius: 40px;
+text-align: center;
+width: 180px;
+height: 40px;
+cursor: pointer;
+}
+.float-L{
+  margin-top: 130px;
+  padding: 0 100px;
+  
+}
+
+.float-R img{
+height: 480px;
+margin-left: 80px;
+background-image: url(/images/bg-intro-mobile.svg);
+
+}
+.choose{
+    background-color: ghostwhite;
+    padding-top: 7px;
+}
+.part2{
+    padding: 0 100px;
+   
+}
+.section3{
+    padding: 0 100px;
+}
+.col-3{
+    width: 25%;
+    padding: 12px;
+}
+.last-part{
+    padding: 0 100px;
+}
+.latest img{
+    height: 120px;
+    
+}
+.latest h2 a{
+    text-decoration: none;
+}
+.col-4{
+    width: 33.33%;
+}
+footer{
+    background-color: blue;
+}
+.icons {
+    display: flex;
+    
+}
+.icons img{
+    padding: 8px;
+}
+.last-section ul li{
+list-style: none;
+line-height: 28px;
+}
